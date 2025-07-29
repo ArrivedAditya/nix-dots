@@ -9,6 +9,7 @@
     bat
     fastfetch
     neovim
+    python3
   ];
 
   programs.git = {
