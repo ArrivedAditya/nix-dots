@@ -25,12 +25,13 @@
     };
   };
 
+  programs.zsh.enable = true; # Example: Enable zsh
+
   programs.zsh.oh-my-zsh = {
     enable = true;
     theme = "robbyrussell";
   };
 
-  programs.bash.enable = true; # Example: Enable zsh
   # ... other Home-Manager options for dotfiles, services, etc.
   programs.home-manager.enable = true;
 }
