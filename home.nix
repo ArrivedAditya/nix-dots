@@ -24,37 +24,6 @@
     };
   };
 
-# Neovim config
-  nixpkgs.overlays = [
-    inputs.neovim-nightly-overlay.overlay
-  ];
-
-  programs.neovim = {
-    enable = true;
-    # Set the package to the nightly version from the overlay
-    package = pkgs.neovim-nightly;
-
-    # Optional: Configure Neovim here directly using `extraConfig` or `extraLuaConfig`
-    # For example, to set some basic options:
-    # extraConfig = ''
-    #  set number
-    #  set relativenumber
-    #  set expandtab
-    #  set tabstop=2
-    #  set shiftwidth=2
-    #'';
-
-    # Or to link your existing Lua configuration
-    # home.file.".config/nvim".source = ./path/to/your/nvim/config;
-
-    # You can also define plugins here if you want to manage them with Home Manager
-    # plugins = with pkgs.vimPlugins; [
-    #   nvim-treesitter
-    #   nvim-lspconfig
-    #   plenary-nvim
-    # ];
-  };
-
   programs.bash.enable = true; # Example: Enable zsh
   # ... other Home-Manager options for dotfiles, services, etc.
   programs.home-manager.enable = true;
