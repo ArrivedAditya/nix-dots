@@ -27,7 +27,7 @@
 
   programs.zsh.oh-my-zsh = {
     enable = true;
-    theme = "robbyrussell"
+    theme = "robbyrussell";
   };
 
   programs.bash.enable = true; # Example: Enable zsh
