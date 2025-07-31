@@ -11,6 +11,7 @@
     python3
     gcc
     unzip
+    oh-my-zsh
   ];
 
   programs.git = {
@@ -22,6 +23,11 @@
       init.defaultBranch = "main";
       core.editor = "vim";
     };
+  };
+
+  programs.zsh.oh-my-zsh = {
+    enable = true;
+    theme = "robbyrussell"
   };
 
   programs.bash.enable = true; # Example: Enable zsh
