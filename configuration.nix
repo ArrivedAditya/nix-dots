@@ -12,6 +12,7 @@
   wsl.defaultUser = "aaditya";
   users.users.aaditya.isNormalUser = true;
   networking.hostName = "ThinkPad-x250";
+  programs.nix-ld.enable = true;
 
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
   environment.systemPackages = with pkgs; [
